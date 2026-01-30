@@ -1,0 +1,44 @@
+body { font-family: 'Segoe UI', sans-serif; margin:0; background:#f9f9f9; color:#333; }
+header { background:#0a0a0a; color:white; text-align:center; padding:30px; }
+nav { background:#1c1c1c; text-align:center; padding:15px; }
+nav a { color:white; margin:0 20px; text-decoration:none; font-weight:bold; }
+section { padding:40px; max-width:900px; margin:auto; }
+h2 { color:#111; border-bottom:2px solid #ddd; padding-bottom:10px; }
+footer { background:#111; color:#ccc; text-align:center; padding:20px; }
+
+/* Todas las imágenes de la página */
+img {
+  display: block;          /* Hace que se comporten como bloques */
+  margin: 20px auto;       /* Centra horizontalmente */
+  max-width: 400px;        /* Tamaño máximo uniforme */
+  height: auto;            /* Mantiene proporción */
+  border-radius: 8px;      /* Bordes redondeados opcionales */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
+}
+/* Carrusel */
+.carousel {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-images img {
+  width: 600px;
+  border-radius: 8px;
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
